@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikujin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="mood-calm">
+    <div class="container">
+        <header>
+            <div class="date-time">
+                <span class="date">Loading date...</span>
+                <span class="time">00:00</span>
+            </div>
+            <div class="weather">
+                <i class="fas fa-cloud-sun"></i>
+                <span>68°F</span>
+            </div>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch" class="theme-switch">
+                <label for="theme-switch" class="theme-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </header>
+
+        <section class="now-playing">
+            <div class="album-art">
+                <img src="https://images.unsplash.com/photo-1573455494060-c5595004fb6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0JTIwd2luZG93fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Album Art">
+            </div>
+            <div class="track-info">
+                <h3>Now Playing</h3>
+                <h2>"Rainy Evenings"</h2>
+                <p>by chillkat</p>
+                <div class="visualizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="player-controls">
+                    <button class="control-btn"><i class="fas fa-backward"></i></button>
+                    <button class="control-btn play-btn"><i class="fas fa-pause"></i></button>
+                    <button class="control-btn"><i class="fas fa-forward"></i></button>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="time-display">
+                        <span>1:45</span>
+                        <span>3:27</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mood-selector">
+            <h3>Today's Mood</h3>
+            <div class="mood-buttons">
+                <input type="radio" name="mood" id="mood-calm" checked>
+                <label for="mood-calm" class="mood-btn">🌤 Calm</label>
+                
+                <input type="radio" name="mood" id="mood-gloomy">
+                <label for="mood-gloomy" class="mood-btn">🌧 Gloomy</label>
+                
+                <input type="radio" name="mood" id="mood-inspired">
+                <label for="mood-inspired" class="mood-btn">🎨 Inspired</label>
+                
+                <input type="radio" name="mood" id="mood-sleepy">
+                <label for="mood-sleepy" class="mood-btn">🌙 Sleepy</label>
+            </div>
+        </section>
+
+        <section class="playlist-section">
+            <h3>Playlist</h3>
+            <div class="playlist">
+                <div class="playlist-item active">
+                    <div class="playlist-item-img">
+                        <img src="https://images.unsplash.com/photo-1573455494060-c5595004fb6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0JTIwd2luZG93fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Rainy Evenings">
+                    </div>
+                    <div class="playlist-item-info">
+                        <h4>"Rainy Evenings"</h4>
+                        <p>chillkat</p>
+                    </div>
+                    <div class="playlist-item-duration">3:27</div>
+                </div>
+                
+                <div class="playlist-item">
+                    <div class="playlist-item-img">
+                        <img src="https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZmZlZSUyMHNob3B8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Coffee Shop Jazz">
+                    </div>
+                    <div class="playlist-item-info">
+                        <h4>"Coffee Shop Jazz"</h4>
+                        <p>mellow.beats</p>
+                    </div>
+                    <div class="playlist-item-duration">4:15</div>
+                </div>
+                
+                <div class="playlist-item">
+                    <div class="playlist-item-img">
+                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJhaW55JTIwc3RyZWV0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Urban Rainfall">
+                    </div>
+                    <div class="playlist-item-info">
+                        <h4>"Urban Rainfall"</h4>
+                        <p>ambient.waves</p>
+                    </div>
+                    <div class="playlist-item-duration">3:52</div>
+                </div>
+                
+                <div class="playlist-item">
+                    <div class="playlist-item-img">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2glMjBzdW5zZXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Sunset Waves">
+                    </div>
+                    <div class="playlist-item-info">
+                        <h4>"Sunset Waves"</h4>
+                        <p>ocean.sounds</p>
+                    </div>
+                    <div class="playlist-item-duration">5:10</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vibes-board">
+            <h3>Daily Vibes</h3>
+            <div class="vibes-grid">
+                <div class="vibe-card quote">
+                    <h4>Quote of the Day</h4>
+                    <p>"The quieter you become, the more you can hear."</p>
+                </div>
+                
+                <div class="vibe-card palette">
+                    <h4>Today's Palette</h4>
+                    <div class="color-swatches">
+                        <div class="swatch" style="background-color: #d8c3a5;"></div>
+                        <div class="swatch" style="background-color: #8e9aaf;"></div>
+                        <div class="swatch" style="background-color: #e8dbc5;"></div>
+                        <div class="swatch" style="background-color: #b5838d;"></div>
+                    </div>
+                    <p>Muted Mocha</p>
+                </div>
+                
+                <div class="vibe-card sticky-note">
+                    <h4>Thought of the Day</h4>
+                    <p>Remember to breathe deeply and take a moment for yourself today.</p>
+                </div>
+                
+                <div class="vibe-card illustration">
+                    <div class="emoji">🌿</div>
+                    <p>Growth comes slowly, but surely</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="ambient-sounds">
+            <h3>Ambient Sounds</h3>
+            <div class="sound-buttons">
+                <button class="sound-btn">
+                    <i class="fas fa-cloud-rain"></i>
+                    <span>Rain</span>
+                </button>
+                <button class="sound-btn">
+                    <i class="fas fa-fire"></i>
+                    <span>Fireplace</span>
+                </button>
+                <button class="sound-btn">
+                    <i class="fas fa-coffee"></i>
+                    <span>Café</span>
+                </button>
+                <button class="sound-btn">
+                    <i class="fas fa-wind"></i>
+                    <span>Wind</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="focus-timer">
+            <h3>Focus Timer</h3>
+            <div class="timer-display">25:00</div>
+            <div class="timer-controls">
+                <button class="timer-btn"><i class="fas fa-play"></i></button>
+                <button class="timer-btn"><i class="fas fa-pause"></i></button>
+                <button class="timer-btn"><i class="fas fa-redo"></i></button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Designed with ♥ by Pratyush.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
